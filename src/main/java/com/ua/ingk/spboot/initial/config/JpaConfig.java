@@ -24,7 +24,7 @@ import com.zaxxer.hikari.HikariDataSource;
 @EnableJpaRepositories(basePackageClasses = Application.class)
 public class JpaConfig implements TransactionManagementConfigurer {
 
-	@Value("${db.briver}")
+	@Value("${db.driver}")
 	private String driver;
 
 	@Value("${db.url}")

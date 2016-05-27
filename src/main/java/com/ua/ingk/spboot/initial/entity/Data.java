@@ -1,23 +1,25 @@
 package com.ua.ingk.spboot.initial.entity;
 
+import java.util.UUID;
+
 public class Data implements DomainObject {
 
 	private static final long serialVersionUID = 7892574091243969742L;
 
-	private int id;
+	private UUID id;
 
 	private String description;
 
-	public Data(int id, String description) {
+	public Data(UUID id, String description) {
 		this.id = id;
 		this.description = description;
 	}
 
-	public int getId() {
+	public UUID getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(UUID id) {
 		this.id = id;
 	}
 
